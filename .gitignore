@@ -1,0 +1,37 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# Directories
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+
+# Configuración local y caches
+local.properties
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/gradle.xml
+*.iml
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación del NDK
+.cxx/
+
+# Otros archivos temporales
+*.apk
+*.ap_
+*.db
+*.dex
+*.jar

@@ -1,0 +1,16 @@
+<resources>
+    <!-- CREDENCIALES APLICATIVO-->
+    <string name="app_name">My Application</string>
+    <string name="developer">Daniel Pérez</string>
+    <string name="desarrollo">Desarollado por:</string>
+    <string name="version">Version 0.1.0</string>
+
+    <!--LOGIN-->
+    <string name="título_login">Introduce tus credenciales</string>
+    <string name="lbl_usuario">Usuario</string>
+    <string name="txt_usuario">Ingrese Usuario</string>
+    <string name="lbl_password">Contraseña</string>
+    <string name="txt_pasword">Ingrese Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="lbl_crear_cuenta">No tienes cuenta?. Registrate</string>
+</resources>
