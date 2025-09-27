@@ -35,12 +35,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="70dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:text="@string/lbl_usuario"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textAlignment="center"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
         app:layout_constraintHorizontal_bias="0.01"
@@ -61,17 +62,19 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_usuario" />
+            android:hint="@string/txt_usuario"
+            android:textColor="@color/black"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="75dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
         android:layout_marginTop="32dp"
         android:text="@string/lbl_password"
-        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
@@ -82,6 +85,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
@@ -90,7 +94,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_pasword" />
+            android:hint="@string/txt_pasword"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
