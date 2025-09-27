@@ -1,0 +1,31 @@
+Crear camas en bucle para una habitación dada (en este caso la 100):
+
+
+DO $$
+DECLARE i INT;
+BEGIN
+    FOR i IN 3..9 LOOP
+        BEGIN
+            INSERT INTO beds (name, number, extension, phone_number, rooms_id) 
+            VALUES (
+                '100' || i::TEXT, i::TEXT, '100' || i::TEXT, null, 
+                (SELECT id FROM rooms WHERE rooms.number='100')
+            );
+        END;
+    END LOOP;
+END $$;
+
+
+
+Crear habitaciones en bucle:
+
+DO $$
+DECLARE i INT;
+BEGIN
+    FOR i IN 101..110 LOOP
+        BEGIN
+            INSERT INTO rooms (number, localizations_id, nursery_groups_id, name, associated_to_room) 
+            VALUES (i::TEXT, 1, 3, i::TEXT, null);
+        END;
+    END LOOP;
+END $$; 
