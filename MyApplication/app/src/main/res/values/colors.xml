@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#2B7FFF</color>
     <color name="colorPrimaryDark">#193CB8</color>
+    <color name="AndroidColor">#61000000</color>
 </resources>
